@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 1px;
+}
+
+p {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+header {
+	background-color: rgba(55, 155, 229, 0.9); /* #379be5 */
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.main-section {
+	margin-top: 65px;
+}
+
+.post {
+	padding-top: 1px;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear.right {
+	clear:  right;
+}
+
+.header-left {
+	float: left;
+}
+
+.main-logo {
+	font-family: 'Vampiro One', cursive;
+	height: 65px;
+	line-height: 65px;
+	color: #ffffff;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.main-logo:hover {
+	color: #1e2129;
+}
+
+.header-right {
+	float: right;
+	display: flex;
+}
+
+.mode {
+	line-height: 65px;
+	padding: 0 15px;
+	color: #fff;
+	font-size: 1.25em;
+	display: flex;
+}
+
+.switch-wrapper {
+	width: 40px;
+	border: 2px solid white;
+	border-radius: 20px;
+	height: 25px;
+	display: flex;
+	margin: auto 0;
+	cursor: pointer;
+	/* background-color: white; */
+}
+
+.switch-toggle {
+	display: flex;
+	transition: .4s;
+}
+
+.hamburger-menu {
+	height: 65px;
+	display: flex;
+}
+
+.hamburger-icon {
+	cursor: pointer;
+	margin: auto 0;
+}
+
+.bar1, .bar2, .bar3 {
+	background-color: #ffffff;
+	width: 35px;
+	height: 4px;
+	transition: 0.7s;
+}
+
+.bar2 {
+	margin: 5px 0;
+}
+
+.cross .bar1 {
+	transform: rotate(45deg) translate(7px, 5px);
+}
+
+.cross .bar2 {
+	opacity: 0;
+}
+
+.cross .bar3 {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1000px;
+}
+
+header .container {
+	position: relative;
+}
+
+.nav-right {
+	position: absolute;
+	top: 65px;
+	right: 0px;
+}
+
+.d-none {
+	display: none;
+}
+
+.nav-right ul {
+	list-style: none;
+	margin: 0;
+	padding-inline-start: 0;
+	background-color: rgba(55, 155, 229, 0.9);
+	color: white;
+}
+
+.nav-right li {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.nav-right li:hover {
+	background-color: rgba(55, 155, 229, 1);
+}
+
+/* #1e2129 rgba(30, 33, 41, 1) */
+
+
+/* Dark Mode */
+.dark {
+	background-color: #666;
+	color: #fff;
+}
+
+.dark .main-logo:hover {
+	color: #379be5;
+}
+
+.dark .switch-toggle {
+	/* margin: 0 0 0 auto; */
+	transform: translate(19px);
+}
+
+.dark header, .dark .nav-right ul {
+	background-color: rgba(30, 33, 41, 0.9);
+}
+
